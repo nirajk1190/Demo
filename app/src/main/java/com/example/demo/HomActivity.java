@@ -12,7 +12,7 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
     private Context mContext;
     private AppCompatButton btnReadContacts,btnReadSMS,btnCallLog;
     /*Here I changed MainActivity to HomeActivity...Hello Commit*/
-    /*Commit*/
+    /*Commit...Hello*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
