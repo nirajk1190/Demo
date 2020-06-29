@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private Context mContext;
     private AppCompatButton btnReadContacts,btnReadSMS,btnCallLog;
     /*Here I changed MainActivity to HomeActivity...Hello Commit*/
@@ -17,7 +17,7 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        mContext = HomActivity.this;
+        mContext = HomeActivity.this;
 
         init();
     }
@@ -44,17 +44,17 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
     }
 
     private void showCallLogs() {
-        startActivity(new Intent(HomActivity.this, CallHistoryActivity.class));
+        startActivity(new Intent(HomeActivity.this, CallHistoryActivity.class));
         finish();
     }
 
     private void showSMS() {
-        startActivity(new Intent(HomActivity.this, SMSActivity.class));
+        startActivity(new Intent(HomeActivity.this, SMSActivity.class));
         finish();
     }
 
     private void showContacts() {
-        startActivity(new Intent(HomActivity.this, ContactsActivity.class));
+        startActivity(new Intent(HomeActivity.this, ContactsActivity.class));
         finish();
     }
 

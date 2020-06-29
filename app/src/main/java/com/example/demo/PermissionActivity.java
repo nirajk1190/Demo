@@ -91,7 +91,7 @@ public class PermissionActivity extends AppCompatActivity {
                         // check if all permissions are granted
                         if (report.areAllPermissionsGranted()) {
                             SharedPrefUtil.putBoolean("isPermission", true, mContext);
-                            startActivity(new Intent(PermissionActivity.this, HomActivity.class));
+                            startActivity(new Intent(PermissionActivity.this, HomeActivity.class));
                             finish();
                         }
 

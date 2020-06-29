@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomActivity"
+            android:name=".HomeActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".ContactsActivity"
