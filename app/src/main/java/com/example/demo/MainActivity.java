@@ -28,7 +28,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Context mContext;
     private AppCompatButton btnReadContacts,btnReadSMS,btnCallLog;
-    /**/
+    /*Here commit*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
