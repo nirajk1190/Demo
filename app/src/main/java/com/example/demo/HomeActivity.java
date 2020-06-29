@@ -11,8 +11,8 @@ import android.view.View;
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private Context mContext;
     private AppCompatButton btnReadContacts,btnReadSMS,btnCallLog;
-    /*Here I changed MainActivity to HomeActivity...Hello Commit*/
-    /*Commit...Hello...Testing*/
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
