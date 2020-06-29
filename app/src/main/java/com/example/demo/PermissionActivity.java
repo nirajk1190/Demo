@@ -8,8 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -93,7 +91,7 @@ public class PermissionActivity extends AppCompatActivity {
                         // check if all permissions are granted
                         if (report.areAllPermissionsGranted()) {
                             SharedPrefUtil.putBoolean("isPermission", true, mContext);
-                            startActivity(new Intent(PermissionActivity.this, MainActivity.class));
+                            startActivity(new Intent(PermissionActivity.this, HomActivity.class));
                             finish();
                         }
 
