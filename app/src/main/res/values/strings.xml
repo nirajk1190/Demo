@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="btn_read_contacts">Read Contacts</string>
+    <string name="contacts_toolbar_title">Contacts</string>
+    <string name="btn_read_sms">Read SMS</string>
+    <string name="permission_content">To assess your eligibility and facilitate faster disbursal of your loan, we need permissions to access your Camera, Contacts, Location, Phone, Storage and SMS.</string>
+    <string name="btn_lets_go_text">Allow Permissions</string>
+    <string name="permission_act_toolbar_title">Permissions</string>
+    <!--Device and App history-->
+    <string name="app_history">Device &amp; App history</string>
+    <string name="app_history1">\u2022 read you Web bookmarks and history</string>
+    <string name="app_history2">\u2022 retrieve running apps</string>
+
+    <!--Identity-->
+    <string name="identity">Identity</string>
+    <string name="identity1">\u2022 find accounts on the device</string>
+
+    <!--Calender-->
+    <string name="calender">Calender</string>
+    <string name="calender1">\u2022 read calender events plus confidential information</string>
+
+    <!--Contacts-->
+    <string name="contacts">Contacts</string>
+    <string name="contacts1">\u2022 read your contacts</string>
+
+    <!--Location-->
+    <string name="locations">Location</string>
+    <string name="location1">\u2022 approximate location (network based)</string>
+    <string name="location2">\u2022 precise location (GPRS and network-based)</string>
+
+    <!--SMS-->
+    <string name="sms">SMS</string>
+    <string name="sms1">\u2022 receive text messages (SMS or MMS)</string>
+    <string name="sms2">\u2022 send SMS messages</string>
+
+    <!--phone-->
+    <string name="phone">Phone</string>
+    <string name="phone1">\u2022 read call log</string>
+    <string name="phone2">\u2022 write call log</string>
+    <string name="phone3">\u2022 reroute outgoing calls</string>
+
+    <!--Photos/Media/Files-->
+    <string name="photos">Photos/Media/Files</string>
+    <string name="photos1">\u2022 modify or delete the contents of your SD Card</string>
+    <string name="photos2">\u2022 read the contents of you SD card</string>
+
+    <!--Camera-->
+    <string name="camera">Camera</string>
+    <string name="camera1">\u2022 take pictures and videos</string>
+
+    <!--Wifi connections-->
+    <string name="wifi_connection">Wi-Fi connection information</string>
+    <string name="wifi_connection1">\u2022 view Wi-Fi connections</string>
+
+    <!--Device ID & call information-->
+    <string name="device_id">Device ID &amp; call infirmation</string>
+    <string name="device_id1">\u2022 read phone status and identify</string>
+    <string name="btn_read_calls">Read Calls</string>
+    <string name="call_history_toolbar_title">Call History</string>
+
+</resources>

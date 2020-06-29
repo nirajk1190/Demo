@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dd1f25</color>
+    <color name="colorPrimaryLight">#F6AFB1</color>
+    <color name="colorPrimaryDark">#dd1f25</color>
+    <color name="colorAccent">#253a57</color>
+    <color name="white">#FFFF</color>
+    <color name="bg_circle_default">#666666</color>
+    <color name="black">#253a57</color>
+
+</resources>

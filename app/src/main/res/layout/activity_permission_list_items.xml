@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dim_8">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_8"
+        android:src="@drawable/ic_perm_media_black_24dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_8"
+        android:layout_toEndOf="@+id/ivIcon"
+        android:layout_toRightOf="@+id/ivIcon">
+
+        <TextView
+            android:id="@+id/tvPermissionHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sinkinsans600semibold"
+            android:justificationMode="inter_word"
+            android:text="Dear Customer,"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size14" />
+
+        <TextView
+            android:id="@+id/tvPermissionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_below="@+id/tvPermissionHeading"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/permission_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <TextView
+            android:id="@+id/tvPermissionContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:visibility="gone"
+            android:layout_below="@+id/tvPermissionContent"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/permission_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+        <TextView
+            android:id="@+id/tvPermissionContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8"
+            android:visibility="gone"
+            android:layout_below="@+id/tvPermissionContent1"
+            android:lineSpacingExtra="@dimen/dim_6"
+            android:fontFamily="@font/sinkinsanslight"
+            android:justificationMode="inter_word"
+            android:text="@string/permission_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/universal_text_size12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReadContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:layout_marginBottom="@dimen/dim_4"
+                android:backgroundTint="@color/colorPrimary"
+                android:enabled="true"
+                android:fontFamily="@font/audiowide_regular"
+                android:text="@string/btn_read_contacts"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReadSMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:layout_marginBottom="@dimen/dim_4"
+                android:backgroundTint="@color/colorPrimary"
+                android:enabled="true"
+                android:fontFamily="@font/audiowide_regular"
+                android:text="@string/btn_read_sms"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCallLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:layout_marginStart="@dimen/dim_4"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginEnd="@dimen/dim_4"
+                android:layout_marginBottom="@dimen/dim_4"
+                android:backgroundTint="@color/colorPrimary"
+                android:enabled="true"
+                android:fontFamily="@font/audiowide_regular"
+                android:text="@string/btn_read_calls"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size14" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

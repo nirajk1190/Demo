@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCustHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:fontFamily="@font/sinkinsanslight"
+                android:justificationMode="inter_word"
+                android:text="Dear Customer,"
+                android:textColor="@color/black"
+                android:textSize="@dimen/universal_text_size14" />
+
+            <TextView
+                android:id="@+id/tvNameHeading"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvCustHead"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_4"
+                android:fontFamily="@font/sinkinsanslight"
+                android:lineSpacingExtra="@dimen/dim_6"
+                android:justificationMode="inter_word"
+                android:text="@string/permission_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/universal_text_size14" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvNameHeading"
+                android:layout_marginTop="@dimen/dim_12"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvData">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAccepted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/audiowide_regular"
+                    android:text="@string/btn_lets_go_text"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/universal_text_size14"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
