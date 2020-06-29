@@ -12,8 +12,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private Context mContext;
     private AppCompatButton btnReadContacts,btnReadSMS,btnCallLog;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
